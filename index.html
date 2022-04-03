@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viplav Portfolio</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- header section -->
+    <header class="header" id="header">
+        <div class="header_container">
+            <div class="logo">
+                <p id="logo">Portfo<span>lio</span></p>
+                 
+                <div class="mobile">
+                    <i onclick="toggleNav()" id="mobile_menu" class="fa-solid fa-bars mobile"></i>
+                </div>
+            </div>
+           
+            <nav id="menu" class="menu">
+                <ul class="navigation">
+                    <li id="home" class="menu_items menu_items_ltr">Home</li>
+                    <li id="about" class="menu_items menu_items_ltr">About</li>
+                    <li id="skills" class="menu_items menu_items_ltr">Skills</li>
+                    <li id="projects" class="menu_items menu_items_ltr">Projects</li>
+                    <li id="contact" class="menu_items menu_items_ltr">Let's Talk</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- banner section -->
+    <section id="banner_section" class="banner">
+        <div class="banner_container">
+            <div class="profile_photo"></div>
+            <div class="details">
+                <p>Hello, my name is</p>
+                <h1>Viplav Gupta</h1>
+                <p>And I'm a <span id="desc_title"></span><span class="cursor" id="cursor"></span></p>
+                <button id="hire_btn" onmouseout="arrowRight()" onmouseover="arrowRightLong()">Hire Me <span><i id="arrow" class="fa-solid fa-arrow-right"></i></span></button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- about me section -->
+    <section id="about_section" class="about">
+
+        <div class="titles">
+            <h1 class="section_title">
+                About Me
+            </h1>
+            <span class="section_subtitle">
+                My introduction
+            </span>
+        </div>
+
+        <div class="about_container">
+
+            <div class="about_content">
+                <div class="about_photo">
+                    <img src="./assets/images/about_img.jpg" alt="">
+                </div>
+                <div class="about_details">
+
+                    <div class="about_description">
+                        <p class="desc">
+                            I've always been a Hungry Learner and dedicated towards my work.
+                            And Web developer, with three plus years of self taught experience, working in Front-End development along with Ui / Ux design, and always try to deliver quality work.
+                            But still on a way to become a Full Stack Developer in MERN stack technologies.
+                            Being good at Front-End isn't enough these days so consistently learning Back-End technologies as well.
+                        </p>
+                    </div>
+
+                    <div class="table">
+
+                        <div class="table_details">
+
+                            <div class="detail">
+                                <h1>03+</h1>
+                                <p class="table_area">Years</p>
+                                <span class="table_area table_span">Front-End Experience</span>
+                            </div>
+
+                        </div>
+
+                        <div class="table_details">
+                        
+                            <div class="detail">
+                                <h1>10+</h1>
+                                <p class="table_area">Illustrations</p>
+                                <span class="table_area table_span">Completed</span>
+                            </div>
+                        
+                        </div>
+
+                        <div class="table_details">
+                        
+                            <div class="detail">
+                                <h1>01</h1>
+                                <p class="table_area">Company</p>
+                                <span class="table_area table_span">Working</span>
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <a class="download_cv" href="./assets/file/Viplav CV.pdf" download="">Download CV<i class="fa-solid fa-angles-down"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- skills section -->
+    <section id="skills_section" class="skills">
+        <div class="titles">
+            <h1 class="section_title">
+                Skills
+            </h1>
+            <span class="section_subtitle">
+                My Skills
+            </span>
+        </div>
+
+        <div class="skills_container">
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>HTML</h3>
+                    <p>100%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>CSS</h3>
+                    <p>85%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_2"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>Javascript</h3>
+                    <p>80%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_3"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>Bootstrap</h3>
+                    <p>90%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_4"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>Tailwind CSS</h3>
+                    <p>90%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_5"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>ReactJS</h3>
+                    <p>80%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_6"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>NodeJS</h3>
+                    <p>60%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_7"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>Data Structures</h3>
+                    <p>75%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_8"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>Git & Version Controls</h3>
+                    <p>80%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_9"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>Figma</h3>
+                    <p>80%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_10"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>Responsive Designs</h3>
+                    <p>95%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_11"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>Databases</h3>
+                    <p>80%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_12"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>MySQL</h3>
+                    <p>85%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_13"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>MongoDB</h3>
+                    <p>70%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_14"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill_name">
+                    <h3>NextJS</h3>
+                    <p>60%</p>
+                </div>
+                <div class="length">
+                    <div class="fill_length fill_length_15"></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects_section" class="projects">
+
+        <div class="titles">
+            <h1 class="section_title">
+                Projects
+            </h1>
+            <span class="section_subtitle">
+                My Projects
+            </span>
+        </div>
+
+
+        <div class="project_container">
+
+            <div class="project">
+                <h2>Restaurant Site</h2>
+                <p>
+                    A basic restaurant site built in earlier days of my learning without even flex-boxing.
+                    A simple and clean basic design for any restaurant startup landing page.
+
+                </p>
+                <div class="visit">
+                    <a href="https://github.com/viplavg/Restaurant_Site" target="__blank">View More</a>
+                    <a href="https://hungries.netlify.app/" target="__blank">Visit Site</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Travel Site</h2>
+                <p>
+                    A good looking travel site built using HTML , CSS and a little bit Javascript only.
+                    A clean UI with basic animations for user interaction and fully responsive across all devices.   
+                </p>
+                <div class="visit">
+                    <a href="https://github.com/viplavg/Travel_Site" target="__blank">View More</a>
+                    <a href="https://indiana-tours.netlify.app" target="__blank">Visit Site</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Drum Kit</h2>
+                <p>
+                    A simple Drum Kit built using HTML , CSS and some Javascript.
+                    Not only playable while clicking but also includes keyboard interactions and play sounds accordingly. 
+            
+                </p>
+                <div class="visit">
+                    <a href="https://github.com/viplavg/Drum-Kit" target="__blank">View More</a>
+                    <a href="https://viplavg.github.io/Drum-Kit/" target="__blank">Visit Site</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Todo App</h2>
+                <p>
+                    A cool and good looking Todo List App built using Javascript's ReactJS Library. Also uses firebase and firestore to store tasks permanently.
+                    It involves adding new todos, editing todos and deleting todos. So, everything is in user's hands.
+            
+                </p>
+                <div class="visit">
+                    <a href="https://github.com/viplavg/Todo-app" target="__blank">View More</a>
+                    <a href="https://todo-app-57644.web.app/" target="__blank">Visit Site</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Tesla-UI Clone</h2>
+                <p>
+                    A Tesla UI landing page look alike built using ReactJS Library of Javascript.
+                    It also involves some basic animations and fade in effects as the original site.
+                </p>
+                <div class="visit">
+                    <a href="https://github.com/viplavg/Tesla-UI-Clone" target="__blank">View More</a>
+                    <a href="https://teslaui-clone.netlify.app/" target="__blank">Visit Site</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Covid-19 Tracker</h2>
+                <p>
+                    A Worldwide Covid-19 tracker built using ReactJS Library of Javascript.
+                    It includes all the countries by search and displays the respective datas. Also, uses chartJS to
+                    represent data in line chart. And also contains maps to highlight the active cases.
+                </p>
+                <div class="visit">
+                    <a href="https://github.com/viplavg/Covid-19-Tracker" target="__blank">View More</a>
+                    <a href="https://covid-tracker-globally.netlify.app/" target="__blank">Visit Site</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Disney-UI Clone</h2>
+                <p>
+                    A Disney look alike built using styled components of ReactJS Library. It contains all the animations and shadow effects
+                    and a main carousel on landing page. And uses an API to display some movies and shows for good experience.
+                   
+                </p>
+                <div class="visit">
+                    <a href="https://github.com/viplavg/Disney-UI-Clone" target="__blank">View More</a>
+                    <a href="https://disney-plus-carbon.netlify.app/" target="__blank">Visit Site</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>Filter System</h2>
+                <p>
+                   A Filter System built with pure Vanilla Javascript to Illustrate the use of how filters work in e-commerce websites.
+                   Used a table structure for now to make it work and also includes chaining filter feature along with pagination.
+                   Also, used the localStorage to store the data permanently and also contains the feature to add, upadte, view and delete any
+                   product from the structure.
+                </p>
+                <div class="visit">
+                    <a href="https://github.com/viplavg/Filter-System-and-CRUD-Logic" target="__blank">View More</a>
+                    <a href="https://filter-system.netlify.app" target="__blank">Visit Site</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section -->
+    <section id="contact_section" class="contact">
+
+
+        <div class="titles">
+            <h1 class="section_title">
+                Contact Me
+            </h1>
+            <span class="section_subtitle">
+                Get in Touch
+            </span>
+        </div>
+
+        <div class="contact_container">
+
+            <div class="left_container">
+
+                <div class="cont">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="conts">
+                        <p>Call Me</p>
+                        <p>8791689408</p>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="conts">
+                        <p>Email</p>
+                        <p>viplavg1999@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <i class="fa-solid fa-location-dot"></i>                    <div class="conts">
+                        <p>Location</p>
+                        <p>Meerut - Apex Griham Homes #250002</p>
+                    </div>
+                </div>
+
+            </div>
+                <div class="right_container">
+                    <input required type="text" id="name" placeholder="Name">
+                    <input required type="email" id="email" placeholder="E-mail">
+                    <textarea required id="message" cols="30" rows="15" placeholder="Message"></textarea>
+                    <button>Send Message<i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer_container">
+            
+            <div class="logo footer_logo">
+                <p id="logo">Viplav</p>
+                <p>Frontend Developer</p>
+            </div>
+
+            <div class="quick_links">
+                <a href="#">Portfolio</a>
+                <a href="#about_section">About</a>
+                <a href="#skills_section">Skills</a>
+                <a href="#projects_section">Projects</a>
+            </div>
+
+            <div class="socials">
+                <a href="https://www.instagram.com/viplavg/" target="__blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/viplav-gupta-218888175/" target="__blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/viplavg/" target="__blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            
+        </div>
+        <div id="back_to_top" class="back_to_top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
